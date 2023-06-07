@@ -5,7 +5,7 @@ FROM ubuntu
 RUN apt update && apt install -y nginx
 
 # Copy your web page files to the container
-COPY . /usr/share/nginx/html
+COPY . /var/www/html
 
 # Expose port 80 for the web server
 EXPOSE 80
